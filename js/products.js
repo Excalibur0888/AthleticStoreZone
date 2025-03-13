@@ -2,16 +2,16 @@
 const products = [
     {
         id: 1,
-        name: "Nike Air Zoom Pegasus 38",
+        name: "Velocite Air Glide Runner 38",
         category: "footwear",
         price: 8999,
         image: "/images/product-shoe1.jpg",
-        description: "Responsive running shoes with Zoom Air cushioning for comfort and speed.",
+        description: "Responsive running shoes with Air cushioning for comfort and speed.",
         sizes: ["UK 6", "UK 7", "UK 8", "UK 9", "UK 10"]
     },
     {
         id: 2,
-        name: "Adidas Predator Edge Football",
+        name: "PulsarTech Predator Edge Football",
         category: "balls",
         price: 2499,
         image: "/images/product-ball1.jpg",
@@ -20,16 +20,16 @@ const products = [
     },
     {
         id: 3,
-        name: "Wilson Pro Staff RF97 Tennis Racket",
+        name: "ZenithFlex Pro Staff RF97 Tennis Racket",
         category: "rackets",
         price: 15999,
         image: "/images/product-racket1.jpg",
-        description: "Roger Federer's signature racket with precision and control for advanced players.",
+        description: "Professional signature racket with precision and control for advanced players.",
         sizes: ["L1", "L2", "L3", "L4"]
     },
     {
         id: 4,
-        name: "Under Armour Sports Bag",
+        name: "ZenithFlex Sports Bag",
         category: "accessories",
         price: 3499,
         image: "/images/product-bag1.jpg",
@@ -38,7 +38,7 @@ const products = [
     },
     {
         id: 5,
-        name: "Puma Future Z Football Boots",
+        name: "TerraGrip Future Z Football Boots",
         category: "footwear",
         price: 12999,
         image: "/images/product-shoe2.jpg",
@@ -47,16 +47,16 @@ const products = [
     },
     {
         id: 6,
-        name: "Spalding NBA Official Basketball",
+        name: "TerraGrip Pro Basketball",
         category: "balls",
         price: 4999,
         image: "/images/product-ball2.jpg",
-        description: "Official NBA game ball with superior grip and durability.",
+        description: "Official game ball with superior grip and durability.",
         sizes: ["Size 5", "Size 6", "Size 7"]
     },
     {
         id: 7,
-        name: "Yonex Astrox 100ZZ Badminton Racket",
+        name: "Velocite Astrox 100ZZ Badminton Racket",
         category: "rackets",
         price: 18999,
         image: "/images/product-racket2.jpg",
@@ -64,7 +64,7 @@ const products = [
     },
     {
         id: 8,
-        name: "Nike Dri-FIT Training Gloves",
+        name: "Velocite Dry-Tech Training Gloves",
         category: "accessories",
         price: 1499,
         image: "/images/product-gloves1.jpg",
@@ -72,15 +72,15 @@ const products = [
     },
     {
         id: 9,
-        name: "Adidas Ultraboost 22",
+        name: "PulsarTech UltraStride 22",
         category: "footwear",
         price: 14999,
         image: "/images/product-shoe3.jpg",
-        description: "Premium running shoes with responsive Boost midsole for ultimate energy return."
+        description: "Premium running shoes with responsive PowerBoost midsole for ultimate energy return."
     },
     {
         id: 10,
-        name: "Kookaburra Cricket Ball",
+        name: "PulsarTech Cricket Ball",
         category: "balls",
         price: 1999,
         image: "/images/product-ball3.jpg",
@@ -88,15 +88,15 @@ const products = [
     },
     {
         id: 11,
-        name: "Head Graphene 360+ Speed Pro Tennis Racket",
+        name: "TerraGrip Graphene 360+ Speed Pro Tennis Racket",
         category: "rackets",
         price: 16999,
         image: "/images/product-racket3.jpg",
-        description: "Novak Djokovic's choice with perfect balance of power and control."
+        description: "Professional choice with perfect balance of power and control."
     },
     {
         id: 12,
-        name: "Fitbit Charge 5 Fitness Tracker",
+        name: "ZenithFlex Pulse 5 Fitness Tracker",
         category: "accessories",
         price: 12999,
         image: "/images/product-tracker1.jpg",
@@ -104,7 +104,7 @@ const products = [
     },
     {
         id: 13,
-        name: "Asics Gel-Kayano 28",
+        name: "Velocite Gel-Kayano 28",
         category: "footwear",
         price: 11999,
         image: "/images/product-shoe4.jpg",
@@ -112,15 +112,15 @@ const products = [
     },
     {
         id: 14,
-        name: "Mikasa V200W Volleyball",
+        name: "PulsarTech V200W Volleyball",
         category: "balls",
         price: 3499,
         image: "/images/product-ball4.jpg",
-        description: "Official FIVB game ball with aerodynamic dimple design for stable flight."
+        description: "Official game ball with aerodynamic dimple design for stable flight."
     },
     {
         id: 15,
-        name: "Babolat Pure Drive Tennis Racket",
+        name: "TerraGrip Pure Drive Tennis Racket",
         category: "rackets",
         price: 13999,
         image: "/images/product-racket4.jpg",
@@ -128,23 +128,23 @@ const products = [
     },
     {
         id: 16,
-        name: "Nike Pro Combat Compression Shorts",
+        name: "Velocite Pro Elite Compression Shorts",
         category: "accessories",
         price: 2499,
         image: "/images/product-shorts1.jpg",
-        description: "Compression shorts with Dri-FIT technology for muscle support and moisture management."
+        description: "Compression shorts with Dry-Tech technology for muscle support and moisture management."
     },
     {
         id: 17,
-        name: "New Balance Fresh Foam 1080v11",
+        name: "ZenithFlex Fresh Step 1080",
         category: "footwear",
         price: 13499,
         image: "/images/product-shoe5.jpg",
-        description: "Premium cushioned running shoes with Fresh Foam midsole for plush comfort."
+        description: "Premium cushioned running shoes with Fresh Step midsole for plush comfort."
     },
     {
         id: 18,
-        name: "Gilbert Rugby World Cup Ball",
+        name: "ZenithFlex Rugby World Cup Ball",
         category: "balls",
         price: 4499,
         image: "/images/product-ball5.jpg",
@@ -152,7 +152,7 @@ const products = [
     },
     {
         id: 19,
-        name: "Li-Ning Windstorm 72 Badminton Racket",
+        name: "Velocite Windstorm 72 Badminton Racket",
         category: "rackets",
         price: 8999,
         image: "/images/product-racket5.jpg",
@@ -160,7 +160,7 @@ const products = [
     },
     {
         id: 20,
-        name: "Garmin Forerunner 245 GPS Watch",
+        name: "PulsarTech Navigator 245 GPS Watch",
         category: "accessories",
         price: 24999,
         image: "/images/product-watch1.jpg",

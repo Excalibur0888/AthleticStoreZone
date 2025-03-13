@@ -233,6 +233,7 @@ section {
 .category-card__title {
     padding: 16px;
     text-align: center;
+		margin: 0;
     font-size: 1.25rem;
     background-color: var(--primary-color);
     color: var(--light-text);

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+		<meta name="description" content="Contact us for any inquiries or support. We're here to help you with your orders and questions.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - PlayEquipHub</title>
+    <link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+			<div class="container">
+					<div class="header__inner">
+							<div class="logo">
+									<a href="/">
+											<span class="logo__text">AthleticStoreZone</span>
+									</a>
+							</div>
+							<nav class="nav">
+									<ul class="nav__list">
+											<li class="nav__item"><a href="/" class="nav__link active">Home</a></li>
+											<li class="nav__item"><a href="/catalog/" class="nav__link">Catalog</a></li>
+											<li class="nav__item"><a href="/app/" class="nav__link">App</a></li>
+											<li class="nav__item"><a href="/about/" class="nav__link">About</a></li>
+											<li class="nav__item"><a href="/contact" class="nav__link">Contact</a></li>
+									</ul>
+							</nav>
+							<div class="header__cart">
+									<a href="/cart/" class="cart-icon">
+											<img src="/images/cart-icon.svg" alt="Cart" width="24" height="24">
+											<span class="cart-count">0</span>
+									</a>
+							</div>
+							<div class="header__burger">
+									<span></span>
+							</div>
+					</div>
+			</div>
+	</header>
+
+    <main>
+        <!-- Contact Hero Section -->
+        <section class="contact-hero">
+            <div class="contact-hero__content">
+                <h1 class="contact-hero__title">Contact Us</h1>
+                <p class="contact-hero__subtitle">We'd love to hear from you</p>
+            </div>
+        </section>
+
+        <!-- Contact Information Section -->
+        <section class="contact-info">
+            <div class="container">
+                <div class="contact-info__grid">
+                    <div class="contact-info__item fade-in-up">
+                        <div class="contact-info__icon">📱</div>
+                        <h3 class="contact-info__title">Phone</h3>
+                        <p class="contact-info__text"><a href="tel:+911822398011">+91 18223-98011</a></p>
+                    </div>
+                    <div class="contact-info__item fade-in-up" style="animation-delay: 0.2s;">
+                        <div class="contact-info__icon">✉️</div>
+                        <h3 class="contact-info__title">Email</h3>
+                        <p class="contact-info__text"><a href="mailto:contact@athleticstorezone.com">contact@athleticstorezone.com</a></p>
+                    </div>
+                    <div class="contact-info__item fade-in-up" style="animation-delay: 0.6s;">
+                        <div class="contact-info__icon">⏰</div>
+                        <h3 class="contact-info__title">Working Hours</h3>
+                        <p class="contact-info__text">Monday - Friday: 9am - 8pm</p>
+                        <p class="contact-info__text">Saturday - Sunday: 10am - 6pm</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="contact-form-container">
+                    <div class="contact-form__header">
+                        <h2 class="contact-form__title">Send Us a Message</h2>
+                        <p class="contact-form__subtitle">Fill out the form below and we'll get back to you as soon as possible</p>
+                    </div>
+                    <form id="contactForm" class="contact-form" action="/thanks_form.php" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" class="form-control">
+                                <option value="general">General Inquiry</option>
+                                <option value="support">Customer Support</option>
+                                <option value="order">Order Status</option>
+                                <option value="returns">Returns & Exchanges</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required class="form-control"></textarea>
+                        </div>
+                        <div class="form-group form-checkbox">
+                            <input type="checkbox" id="privacyConsent" name="privacyConsent" required>
+                            <label for="privacyConsent">I agree to the <a href="/privacy-policy">Privacy Policy</a></label>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="faq-title">Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How can I track my order?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>You can track your order by logging into your account and visiting the "My Orders" section. Alternatively, you can use the tracking number provided in your order confirmation email.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What is your return policy?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We offer a 30-day return policy for most items. Products must be in their original condition with tags attached. Please visit our Returns & Exchanges page for more details.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do you ship internationally?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we ship to most countries worldwide. International shipping rates and delivery times vary depending on the destination. You can see the shipping options during checkout.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How do I find the right size?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Each product page includes a size guide specific to that item. You can also visit our general Size Guide page for comprehensive sizing information across all our product categories.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+			<div class="container">
+					<div class="footer__inner">
+							<div class="footer__column">
+									<div class="footer__logo">
+											<span class="logo__text">AthleticStoreZone</span>
+									</div>
+									<p class="footer__description">Your one-stop destination for premium sports equipment in India.</p>
+							</div>
+							<div class="footer__column">
+									<h3 class="footer__title">Quick Links</h3>
+									<ul class="footer__links">
+											<li><a href="/">Home</a></li>
+											<li><a href="/catalog/">Catalog</a></li>
+											<li><a href="/app/">Mobile App</a></li>
+											<li><a href="/about/">About Us</a></li>
+									</ul>
+							</div>
+							<div class="footer__column">
+									<h3 class="footer__title">Categories</h3>
+									<ul class="footer__links">
+											<li><a href="/catalog/?category=footwear">Footwear</a></li>
+											<li><a href="/catalog/?category=balls">Balls</a></li>
+											<li><a href="/catalog/?category=rackets">Rackets</a></li>
+											<li><a href="/catalog/?category=accessories">Accessories</a></li>
+									</ul>
+							</div>
+							<div class="footer__column">
+									<h3 class="footer__title">Contact Us</h3>
+									<address class="footer__contact">
+											<p>Email:&nbsp<a href="mailto:contact@athleticstorezone.com">contact@athleticstorezone.com</a></p>
+											<p>Phone:&nbsp<a href="tel:+911822398011">+91 18223-98011</a></p>
+									</address>
+							</div>
+					</div>
+					<div class="footer__bottom">
+							<p class="footer__copyright">&copy; 2025 AthleticStoreZone. All rights reserved.</p>
+							<div class="footer__legal">
+									<a href="/terms-conditions/">Terms & Conditions</a>
+									<a href="/privacy-policy/">Privacy Policy</a>
+							</div>
+					</div>
+			</div>
+	</footer>
+    <script src="/js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html> 

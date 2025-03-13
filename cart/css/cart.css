@@ -345,6 +345,7 @@
     
     .cart-item {
         grid-template-columns: 80px 1fr;
+        gap: 25px;
     }
     
     .cart-item__price-column {
@@ -356,6 +357,21 @@
     .cart-item__actions {
         flex-direction: column;
         align-items: flex-start;
+    }
+}
+
+/* Specific styling for screen sizes between 576px and 768px */
+@media (min-width: 577px) and (max-width: 768px) {
+    .cart-item {
+        gap: 30px;
+    }
+    
+    .cart-item__image {
+        margin-right: 10px;
+    }
+    
+    .cart-item__details {
+        padding-left: 5px;
     }
 }
 

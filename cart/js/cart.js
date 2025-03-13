@@ -251,13 +251,13 @@ document.addEventListener('DOMContentLoaded', function() {
         const recommendedProducts = [
             {
                 id: 1,
-                name: 'Asics Gel-Kayano 28',
+                name: 'Velocite Gel-Kayano 28',
                 price: 11999,
                 image: '/images/product-shoe4.jpg'
             },
             {
                 id: 2,
-                name: 'Nike Air Zoom Pegasus 38',
+                name: 'Velocite Air Glide Runner 38',
                 price: 8999,
                 image: '/images/product-shoe1.jpg'
             },
@@ -275,7 +275,7 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             {
                 id: 5,
-                name: 'Puma Future Z Football Boots',
+                name: 'TerraGrip Future Z Football Boots',
                 price: 12999,
                 image: '/images/product-shoe2.jpg'
             }
