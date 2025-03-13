@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog - AthleticStoreZone</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="css/catalog.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo">
+                    <a href="/">
+                        <span class="logo__text">AthleticStoreZone</span>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="/catalog/" class="nav__link active">Catalog</a></li>
+                        <li class="nav__item"><a href="/app/" class="nav__link">App</a></li>
+                        <li class="nav__item"><a href="/about/" class="nav__link">About</a></li>
+                    </ul>
+                </nav>
+                <div class="header__cart">
+                    <a href="/cart/" class="cart-icon">
+                        <img src="/images/cart-icon.svg" alt="Cart" width="24" height="24">
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Catalog Page -->
+    <section class="catalog-hero">
+        <div class="container">
+            <h1 class="catalog-hero__title">Our Products</h1>
+            <p class="catalog-hero__subtitle">Discover premium sports equipment for every athlete</p>
+        </div>
+    </section>
+
+    <section class="catalog">
+        <div class="container">
+            <div class="catalog__inner">
+                <!-- Sidebar with filters -->
+                <aside class="catalog__sidebar">
+                    <div class="catalog__filter">
+                        <h3 class="filter__title">Categories</h3>
+                        <ul class="filter__list">
+                            <li class="filter__item">
+                                <button class="filter__button active" data-category="all">All Products</button>
+                            </li>
+                            <li class="filter__item">
+                                <button class="filter__button" data-category="footwear">Footwear</button>
+                            </li>
+                            <li class="filter__item">
+                                <button class="filter__button" data-category="balls">Balls</button>
+                            </li>
+                            <li class="filter__item">
+                                <button class="filter__button" data-category="rackets">Rackets</button>
+                            </li>
+                            <li class="filter__item">
+                                <button class="filter__button" data-category="accessories">Accessories</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="catalog__search">
+                        <h3 class="filter__title">Search</h3>
+                        <div class="search__form">
+                            <input type="text" id="searchInput" class="search__input" placeholder="Search products...">
+                            <button id="searchButton" class="search__button">
+                                <img src="/images/search-icon.svg" alt="Search" width="20" height="20">
+                            </button>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Products grid -->
+                <div class="catalog__content">
+                    <div class="catalog__header">
+                        <h2 class="catalog__title">All Products</h2>
+                        <div class="catalog__count"><span id="productCount">0</span> products</div>
+                    </div>
+                    <div class="products__grid" id="productsGrid">
+                        <!-- Products will be loaded dynamically via JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick View Modal -->
+    <div class="quickview-modal" id="quickviewModal">
+        <div class="quickview-modal__content">
+            <div class="quickview-modal__header">
+                <h3 class="quickview-modal__title">Product Quick View</h3>
+                <button class="quickview-modal__close" id="closeQuickviewModal">&times;</button>
+            </div>
+            <div class="quickview-modal__body" id="quickviewBody">
+                <!-- Product details will be loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Trending Products -->
+    <section class="trending-products">
+        <div class="container">
+            <h2 class="section-title">Trending Products</h2>
+            <p class="trending__subtitle">Most popular items this season</p>
+            <div class="trending__slider" id="trendingSlider">
+                <!-- Trending products will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__column">
+                    <div class="footer__logo">
+                        <span class="logo__text">AthleticStoreZone</span>
+                    </div>
+                    <p class="footer__description">Your one-stop destination for premium sports equipment in India.</p>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">Quick Links</h3>
+                    <ul class="footer__links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/catalog/">Catalog</a></li>
+                        <li><a href="/app/">Mobile App</a></li>
+                        <li><a href="/about/">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">Categories</h3>
+                    <ul class="footer__links">
+                        <li><a href="/catalog/?category=footwear">Footwear</a></li>
+                        <li><a href="/catalog/?category=balls">Balls</a></li>
+                        <li><a href="/catalog/?category=rackets">Rackets</a></li>
+                        <li><a href="/catalog/?category=accessories">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">Contact Us</h3>
+                    <address class="footer__contact">
+                        <p>123 Sports Avenue, Mumbai, India</p>
+                        <p>Email: info@athleticstorezone.com</p>
+                        <p>Phone: +91 1234567890</p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2023 AthleticStoreZone. All rights reserved.</p>
+                <div class="footer__legal">
+                    <a href="/terms-conditions/">Terms & Conditions</a>
+                    <a href="/privacy-policy/">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/products.js"></script>
+    <script src="js/catalog.js"></script>
+</body>
+</html> 

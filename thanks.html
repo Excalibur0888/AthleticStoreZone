@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - AthleticStoreZone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <style>
+        .thanks-hero {
+            background: linear-gradient(135deg, #0056b3, #00a0e9);
+            color: #fff;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+        
+        .thanks-hero__title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .thanks-hero__subtitle {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+        
+        .thanks-content {
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .thanks-content__inner {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            padding: 40px;
+        }
+        
+        .thanks-icon {
+            font-size: 5rem;
+            color: #4caf50;
+            margin-bottom: 20px;
+        }
+        
+        .thanks-message {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .thanks-details {
+            margin-bottom: 30px;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .thanks-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            .thanks-hero {
+                padding: 100px 0 60px;
+            }
+            
+            .thanks-hero__title {
+                font-size: 2rem;
+            }
+            
+            .thanks-content__inner {
+                padding: 30px 20px;
+            }
+            
+            .thanks-buttons {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .thanks-buttons .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo">
+                    <a href="/">
+                        <span class="logo__text">AthleticStoreZone</span>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="/catalog/" class="nav__link">Catalog</a></li>
+                        <li class="nav__item"><a href="/app/" class="nav__link">App</a></li>
+                        <li class="nav__item"><a href="/about/" class="nav__link">About</a></li>
+                    </ul>
+                </nav>
+                <div class="header__cart">
+                    <a href="/cart/" class="cart-icon">
+                        <img src="images/cart-icon.svg" alt="Cart" width="24" height="24">
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Thank You Hero -->
+    <section class="thanks-hero">
+        <div class="container">
+            <h1 class="thanks-hero__title">Thank You for Your Subscription!</h1>
+            <p class="thanks-hero__subtitle">We appreciate your interest in AthleticStoreZone</p>
+        </div>
+    </section>
+
+    <!-- Thank You Content -->
+    <section class="thanks-content">
+        <div class="container">
+            <div class="thanks-content__inner">
+                <div class="thanks-icon">✓</div>
+                <h2 class="thanks-message">Your subscription has been confirmed</h2>
+                <p class="thanks-details">
+                    You've been added to our mailing list and will now be among the first to hear about new arrivals, exclusive offers, and upcoming events.
+                </p>
+                <p class="thanks-details">
+                    We've sent a confirmation email to your inbox. If you don't see it, please check your spam folder.
+                </p>
+                <div class="thanks-buttons">
+                    <a href="/" class="btn btn--secondary">Return to Home</a>
+                    <a href="/catalog/" class="btn btn--primary">Continue Shopping</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__column">
+                    <div class="footer__logo">
+                        <span class="logo__text">AthleticStoreZone</span>
+                    </div>
+                    <p class="footer__description">Your one-stop destination for premium sports equipment in India.</p>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">Quick Links</h3>
+                    <ul class="footer__links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/catalog/">Catalog</a></li>
+                        <li><a href="/app/">Mobile App</a></li>
+                        <li><a href="/about/">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">Categories</h3>
+                    <ul class="footer__links">
+                        <li><a href="/catalog/?category=footwear">Footwear</a></li>
+                        <li><a href="/catalog/?category=balls">Balls</a></li>
+                        <li><a href="/catalog/?category=rackets">Rackets</a></li>
+                        <li><a href="/catalog/?category=accessories">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">Contact Us</h3>
+                    <address class="footer__contact">
+                        <p>123 Sports Avenue, Mumbai, India</p>
+                        <p>Email: info@athleticstorezone.com</p>
+                        <p>Phone: +91 1234567890</p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2023 AthleticStoreZone. All rights reserved.</p>
+                <div class="footer__legal">
+                    <a href="/terms-conditions/">Terms & Conditions</a>
+                    <a href="/privacy-policy/">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Display user email and clear cart count when coming from checkout
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check if user came from newsletter subscription
+            const subscribedEmail = localStorage.getItem('subscribedEmail');
+            if (subscribedEmail) {
+                // Find the message element and update it with the user's email
+                const detailsElement = document.querySelector('.thanks-details');
+                if (detailsElement) {
+                    detailsElement.innerHTML = `
+                        You've been added to our mailing list with email <strong>${subscribedEmail}</strong> and will now be among the first to hear about new arrivals, exclusive offers, and upcoming events.
+                    `;
+                }
+                
+                // Clear the stored email
+                localStorage.removeItem('subscribedEmail');
+            }
+            
+            // Check if user came from checkout
+            const urlParams = new URLSearchParams(window.location.search);
+            const fromCheckout = urlParams.get('checkout');
+            
+            if (fromCheckout === 'complete') {
+                // Update page title and content for order confirmation
+                document.querySelector('.thanks-hero__title').textContent = 'Thank You for Your Order!';
+                document.querySelector('.thanks-hero__subtitle').textContent = 'Your order has been successfully placed';
+                document.querySelector('.thanks-message').textContent = 'Your order has been confirmed';
+                
+                const detailsElement = document.querySelector('.thanks-details');
+                if (detailsElement) {
+                    detailsElement.innerHTML = `
+                        We've sent a confirmation email with your order details. Your items will be shipped soon.
+                    `;
+                }
+                
+                // Clear the cart
+                localStorage.removeItem('cart');
+                
+                // Update cart count
+                const cartCount = document.querySelector('.cart-count');
+                if (cartCount) {
+                    cartCount.textContent = '0';
+                }
+            }
+        });
+    </script>
+</body>
+</html> 

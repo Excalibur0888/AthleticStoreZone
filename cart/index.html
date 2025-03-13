@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - AthleticStoreZone</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo">
+                    <a href="/">
+                        <span class="logo__text">AthleticStoreZone</span>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="/catalog/" class="nav__link">Catalog</a></li>
+                        <li class="nav__item"><a href="/app/" class="nav__link">App</a></li>
+                        <li class="nav__item"><a href="/about/" class="nav__link">About</a></li>
+                    </ul>
+                </nav>
+                <div class="header__cart">
+                    <a href="/cart/" class="cart-icon">
+                        <img src="/images/cart-icon.svg" alt="Cart" width="24" height="24">
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cart Page -->
+    <section class="cart-hero">
+        <div class="container">
+            <h1 class="cart-hero__title">Your Shopping Cart</h1>
+            <p class="cart-hero__subtitle">Review and manage your selected items</p>
+        </div>
+    </section>
+
+    <section class="cart-section">
+        <div class="container">
+            <div class="cart__inner">
+                <div class="cart__content">
+                    <div class="cart__header">
+                        <h2 class="cart__title">Cart Items</h2>
+                        <div class="cart-actions">
+                            <button id="clearCart" class="cart-button cart-button--secondary">Clear Cart</button>
+                            <button id="checkoutBtn" class="cart-button cart-button--primary">Proceed to Checkout</button>
+                            <a href="/catalog/" class="cart-button cart-button--link">
+                                <img src="/images/back-arrow.svg" alt="Back" width="16" height="16">
+                                Continue Shopping
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div id="cartItems" class="cart__items">
+                        <!-- Cart items will be loaded dynamically via JavaScript -->
+                    </div>
+                    
+                    <div id="emptyCart" class="empty-cart">
+                        <div class="empty-cart__icon">🛒</div>
+                        <h3 class="empty-cart__message">Your cart is empty</h3>
+                        <p class="empty-cart__suggestion">Add some products to your cart to see them here</p>
+                        <a href="/catalog/" class="btn btn--primary">Continue Shopping</a>
+                    </div>
+                </div>
+                
+                <div class="cart__sidebar">
+                    <div class="cart__summary">
+                        <h3 class="summary__title">Order Summary</h3>
+                        
+                        <div class="summary__details">
+                            <div class="summary__row">
+                                <span>Subtotal</span>
+                                <span id="subtotal">₹0</span>
+                            </div>
+                            <div class="summary__row">
+                                <span>Shipping</span>
+                                <span id="shipping">₹0</span>
+                            </div>
+                            <div class="summary__row">
+                                <span>Tax (18% GST)</span>
+                                <span id="tax">₹0</span>
+                            </div>
+                        </div>
+                        
+                        <div class="summary__total">
+                            <span>Total</span>
+                            <span id="total">₹0</span>
+                        </div>
+                        
+                        <button id="checkoutBtn" class="btn btn--primary checkout-btn">Proceed to Checkout</button>
+                        
+                        <div class="summary__continue">
+                            <a href="/catalog/" class="continue-link">
+                                <img src="/images/back-arrow.svg" alt="Back" width="16" height="16">
+                                Continue Shopping
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommended Products Section -->
+    <section class="recommended-products">
+        <div class="container">
+            <h2 class="recommended-products__title">Recommended For You</h2>
+            <p class="recommended-products__subtitle">Based on your browsing history</p>
+            
+            <div class="recommended-products__container">
+                <div class="recommended-products__grid" id="recommendedProducts">
+                    <!-- Recommended products will be loaded dynamically via JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__column">
+                    <div class="footer__logo">
+                        <span class="logo__text">AthleticStoreZone</span>
+                    </div>
+                    <p class="footer__description">Your one-stop destination for premium sports equipment in India.</p>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">Quick Links</h3>
+                    <ul class="footer__links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/catalog/">Catalog</a></li>
+                        <li><a href="/app/">Mobile App</a></li>
+                        <li><a href="/about/">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">Categories</h3>
+                    <ul class="footer__links">
+                        <li><a href="/catalog/?category=footwear">Footwear</a></li>
+                        <li><a href="/catalog/?category=balls">Balls</a></li>
+                        <li><a href="/catalog/?category=rackets">Rackets</a></li>
+                        <li><a href="/catalog/?category=accessories">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">Contact Us</h3>
+                    <address class="footer__contact">
+                        <p>123 Sports Avenue, Mumbai, India</p>
+                        <p>Email: info@athleticstorezone.com</p>
+                        <p>Phone: +91 1234567890</p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2023 AthleticStoreZone. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/products.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html> 

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AthleticStoreZone - Premium Sports Equipment in India</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo">
+                    <a href="/">
+                        <span class="logo__text">AthleticStoreZone</span>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="/" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="/catalog/" class="nav__link">Catalog</a></li>
+                        <li class="nav__item"><a href="/app/" class="nav__link">App</a></li>
+                        <li class="nav__item"><a href="/about/" class="nav__link">About</a></li>
+                    </ul>
+                </nav>
+                <div class="header__cart">
+                    <a href="/cart/" class="cart-icon">
+                        <img src="images/cart-icon.svg" alt="Cart" width="24" height="24">
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__inner">
+                <div class="hero__content">
+                    <h1 class="hero__title">Your Ultimate Sports Equipment Destination</h1>
+                    <p class="hero__subtitle">Discover top-quality sports gear for athletes across India</p>
+                    <div class="hero__buttons">
+                        <a href="/catalog/" class="btn btn--primary">Shop Now</a>
+                        <a href="/app/" class="btn btn--secondary pulse-effect">Download App</a>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <img src="images/hero-image.png" alt="Sports Equipment Collection">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Featured Categories</h2>
+            <div class="categories__grid">
+                <a href="/catalog/?category=footwear" class="category-card">
+                    <div class="category-card__image">
+                        <img src="images/category-footwear.jpg" alt="Sports Footwear">
+                    </div>
+                    <h3 class="category-card__title">Footwear</h3>
+                </a>
+                <a href="/catalog/?category=balls" class="category-card">
+                    <div class="category-card__image">
+                        <img src="images/category-balls.jpg" alt="Sports Balls">
+                    </div>
+                    <h3 class="category-card__title">Balls</h3>
+                </a>
+                <a href="/catalog/?category=rackets" class="category-card">
+                    <div class="category-card__image">
+                        <img src="images/category-rackets.jpg" alt="Tennis Rackets">
+                    </div>
+                    <h3 class="category-card__title">Rackets</h3>
+                </a>
+                <a href="/catalog/?category=accessories" class="category-card">
+                    <div class="category-card__image">
+                        <img src="images/category-accessories.jpg" alt="Sports Accessories">
+                    </div>
+                    <h3 class="category-card__title">Accessories</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Best Sellers</h2>
+            <div class="products__grid" id="featuredProducts">
+                <!-- Products will be loaded dynamically via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Limited Time Offer -->
+    <section class="limited-offer">
+        <div class="container">
+            <div class="limited-offer__inner">
+                <div class="limited-offer__content">
+                    <h2 class="limited-offer__title">Limited Time Offer</h2>
+                    <p class="limited-offer__text">Get 20% off on all premium sports equipment. Hurry, offer ends in:</p>
+                    <div class="countdown" id="offerCountdown">
+                        <div class="countdown__item">
+                            <span class="countdown__number" id="countdown-days">00</span>
+                            <span class="countdown__label">Days</span>
+                        </div>
+                        <div class="countdown__item">
+                            <span class="countdown__number" id="countdown-hours">00</span>
+                            <span class="countdown__label">Hours</span>
+                        </div>
+                        <div class="countdown__item">
+                            <span class="countdown__number" id="countdown-minutes">00</span>
+                            <span class="countdown__label">Minutes</span>
+                        </div>
+                        <div class="countdown__item">
+                            <span class="countdown__number" id="countdown-seconds">00</span>
+                            <span class="countdown__label">Seconds</span>
+                        </div>
+                    </div>
+                    <a href="/catalog/" class="btn btn--primary">Shop Now</a>
+                </div>
+                <div class="limited-offer__image">
+                    <img src="images/limited-offer.jpg" alt="Limited Time Offer">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonials__slider">
+                <div class="testimonials__track" id="testimonialsTrack">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="testimonial-card__text">"The quality of sports equipment from AthleticStoreZone is exceptional. I've been using their tennis rackets for years and they never disappoint!"</p>
+                        <div class="testimonial-card__author">
+                            <img src="images/testimonial-1.jpg" alt="Rahul Sharma" class="testimonial-card__avatar">
+                            <div class="testimonial-card__info">
+                                <h4 class="testimonial-card__name">Rahul Sharma</h4>
+                                <p class="testimonial-card__title">Professional Tennis Player</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="testimonial-card__text">"Fast delivery and excellent customer service. The running shoes I purchased are perfect for my marathon training. Highly recommended!"</p>
+                        <div class="testimonial-card__author">
+                            <img src="images/testimonial-2.jpg" alt="Priya Patel" class="testimonial-card__avatar">
+                            <div class="testimonial-card__info">
+                                <h4 class="testimonial-card__name">Priya Patel</h4>
+                                <p class="testimonial-card__title">Marathon Runner</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="testimonial-card__text">"I've been shopping at AthleticStoreZone for all my cricket equipment needs. Their selection is unmatched and the prices are very competitive."</p>
+                        <div class="testimonial-card__author">
+                            <img src="images/testimonial-3.jpg" alt="Vikram Singh" class="testimonial-card__avatar">
+                            <div class="testimonial-card__info">
+                                <h4 class="testimonial-card__name">Vikram Singh</h4>
+                                <p class="testimonial-card__title">Cricket Coach</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__controls">
+                    <button class="testimonials__arrow testimonials__arrow--prev" id="testimonialPrev">
+                        <img src="images/back-arrow.svg" alt="Previous" width="16" height="16">
+                    </button>
+                    <div class="testimonials__dots" id="testimonialDots">
+                        <span class="testimonials__dot active" data-index="0"></span>
+                        <span class="testimonials__dot" data-index="1"></span>
+                        <span class="testimonials__dot" data-index="2"></span>
+                    </div>
+                    <button class="testimonials__arrow testimonials__arrow--next" id="testimonialNext">
+                        <img src="images/back-arrow.svg" alt="Next" width="16" height="16" style="transform: rotate(180deg)">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Promo -->
+    <section class="app-promo">
+        <div class="container">
+            <div class="app-promo__inner">
+                <div class="app-promo__content">
+                    <h2 class="app-promo__title">Shop Smarter with Our Mobile App</h2>
+                    <p class="app-promo__text">Get exclusive deals, faster checkout, and personalized recommendations.</p>
+                    <a href="/app/" class="btn btn--primary pulse-effect">Download Now</a>
+                </div>
+                <div class="app-promo__image">
+                    <img src="images/app-mockup.png" alt="AthleticStoreZone Mobile App">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Brands Section -->
+    <section class="brands">
+        <div class="container">
+            <h2 class="section-title">Popular Brands</h2>
+            <p class="brands__subtitle">We partner with the world's leading sports brands to bring you quality products</p>
+            
+            <div class="brands__grid">
+                <div class="brand-card">
+                    <div class="brand-card__logo">
+                        <img src="images/brand-nike.png" alt="Nike">
+                    </div>
+                    <h3 class="brand-card__name">Nike</h3>
+                    <p class="brand-card__description">Innovative sportswear and equipment for athletes of all levels.</p>
+                    <a href="/catalog/?brand=nike" class="brand-card__link">View Products</a>
+                </div>
+                
+                <div class="brand-card">
+                    <div class="brand-card__logo">
+                        <img src="images/brand-adidas.png" alt="Adidas">
+                    </div>
+                    <h3 class="brand-card__name">Adidas</h3>
+                    <p class="brand-card__description">Performance gear with style for sports and casual wear.</p>
+                    <a href="/catalog/?brand=adidas" class="brand-card__link">View Products</a>
+                </div>
+                
+                <div class="brand-card">
+                    <div class="brand-card__logo">
+                        <img src="images/brand-puma.png" alt="Puma">
+                    </div>
+                    <h3 class="brand-card__name">Puma</h3>
+                    <p class="brand-card__description">Combining performance and style for sports and lifestyle products.</p>
+                    <a href="/catalog/?brand=puma" class="brand-card__link">View Products</a>
+                </div>
+                
+                <div class="brand-card">
+                    <div class="brand-card__logo">
+                        <img src="images/brand-reebok.png" alt="Reebok">
+                    </div>
+                    <h3 class="brand-card__name">Reebok</h3>
+                    <p class="brand-card__description">Fitness-focused gear for training, running, and active lifestyles.</p>
+                    <a href="/catalog/?brand=reebok" class="brand-card__link">View Products</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter__inner">
+                <h2 class="newsletter__title">Subscribe to Our Newsletter</h2>
+                <p class="newsletter__text">Stay updated with our latest news, offers, and product releases.</p>
+                <form id="newsletterForm" class="newsletter__form">
+                    <div class="newsletter__input-group">
+                        <input type="email" name="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn--primary">Subscribe</button>
+                    </div>
+                    <div class="newsletter__checkbox">
+                        <input type="checkbox" id="privacyConsent" required>
+                        <label for="privacyConsent">I agree to the <a href="/privacy-policy">Privacy Policy</a></label>
+                    </div>
+                    <div id="newsletterMessage" class="newsletter__message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__column">
+                    <div class="footer__logo">
+                        <span class="logo__text">AthleticStoreZone</span>
+                    </div>
+                    <p class="footer__description">Your one-stop destination for premium sports equipment in India.</p>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">Quick Links</h3>
+                    <ul class="footer__links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/catalog/">Catalog</a></li>
+                        <li><a href="/app/">Mobile App</a></li>
+                        <li><a href="/about/">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">Categories</h3>
+                    <ul class="footer__links">
+                        <li><a href="/catalog/?category=footwear">Footwear</a></li>
+                        <li><a href="/catalog/?category=balls">Balls</a></li>
+                        <li><a href="/catalog/?category=rackets">Rackets</a></li>
+                        <li><a href="/catalog/?category=accessories">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">Contact Us</h3>
+                    <address class="footer__contact">
+                        <p>123 Sports Avenue, Mumbai, India</p>
+                        <p>Email: info@athleticstorezone.com</p>
+                        <p>Phone: +91 1234567890</p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2023 AthleticStoreZone. All rights reserved.</p>
+                <div class="footer__legal">
+                    <a href="/terms-conditions/">Terms & Conditions</a>
+                    <a href="/privacy-policy/">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html> 
