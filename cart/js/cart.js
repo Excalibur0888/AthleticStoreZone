@@ -253,31 +253,31 @@ document.addEventListener('DOMContentLoaded', function() {
                 id: 1,
                 name: 'Asics Gel-Kayano 28',
                 price: 11999,
-                image: '/images/products/asics-gel-kayano-28.jpg'
+                image: '/images/product-shoe4.jpg'
             },
             {
                 id: 2,
                 name: 'Nike Air Zoom Pegasus 38',
                 price: 8999,
-                image: '/images/products/nike-air-zoom-pegasus-38.jpg'
+                image: '/images/product-shoe1.jpg'
             },
             {
                 id: 3,
-                name: 'Babolat Pure Drive Tennis Racket',
-                price: 13999,
-                image: '/images/products/babolat-pure-drive.jpg'
+                name: 'Wilson Pro Staff RF97 Tennis Racket',
+                price: 15999,
+                image: '/images/product-racket1.jpg'
             },
             {
                 id: 4,
-                name: 'Kookaburra Cricket Ball',
-                price: 1999,
-                image: '/images/products/kookaburra-cricket-ball.jpg'
+                name: 'Spalding NBA Official Basketball',
+                price: 4999,
+                image: '/images/product-ball2.jpg'
             },
             {
                 id: 5,
-                name: 'New Balance 1080v11',
-                price: 13499,
-                image: '/images/products/new-balance-1080v11.jpg'
+                name: 'Puma Future Z Football Boots',
+                price: 12999,
+                image: '/images/product-shoe2.jpg'
             }
         ];
         

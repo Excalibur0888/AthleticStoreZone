@@ -41,6 +41,19 @@ document.addEventListener('DOMContentLoaded', function() {
         updateCatalogTitle();
     }
     
+    // Get URL parameters
+    const searchQueryFromURL = urlParams.get('search');
+    
+    // If there's a search parameter, set the search input value and trigger search
+    if (searchQueryFromURL) {
+        if (searchInput) {
+            searchInput.value = searchQueryFromURL;
+            // Trigger search directly
+            searchQuery = searchQueryFromURL;
+            loadProducts();
+        }
+    }
+    
     // Initial load of products
     loadProducts();
     

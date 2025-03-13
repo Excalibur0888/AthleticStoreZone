@@ -5,7 +5,7 @@ const products = [
         name: "Nike Air Zoom Pegasus 38",
         category: "footwear",
         price: 8999,
-        image: "images/product-shoe1.jpg",
+        image: "/images/product-shoe1.jpg",
         description: "Responsive running shoes with Zoom Air cushioning for comfort and speed.",
         sizes: ["UK 6", "UK 7", "UK 8", "UK 9", "UK 10"]
     },
@@ -14,7 +14,7 @@ const products = [
         name: "Adidas Predator Edge Football",
         category: "balls",
         price: 2499,
-        image: "images/product-ball1.jpg",
+        image: "/images/product-ball1.jpg",
         description: "Official match ball with enhanced grip and accuracy for professional play.",
         sizes: ["Size 4", "Size 5"]
     },
@@ -23,7 +23,7 @@ const products = [
         name: "Wilson Pro Staff RF97 Tennis Racket",
         category: "rackets",
         price: 15999,
-        image: "images/product-racket1.jpg",
+        image: "/images/product-racket1.jpg",
         description: "Roger Federer's signature racket with precision and control for advanced players.",
         sizes: ["L1", "L2", "L3", "L4"]
     },
@@ -32,7 +32,7 @@ const products = [
         name: "Under Armour Sports Bag",
         category: "accessories",
         price: 3499,
-        image: "images/product-bag1.jpg",
+        image: "/images/product-bag1.jpg",
         description: "Durable sports bag with multiple compartments for all your gear.",
         sizes: ["Small", "Medium", "Large"]
     },
@@ -41,7 +41,7 @@ const products = [
         name: "Puma Future Z Football Boots",
         category: "footwear",
         price: 12999,
-        image: "images/product-shoe2.jpg",
+        image: "/images/product-shoe2.jpg",
         description: "Lightweight football boots with adaptive FitZone for superior ball control.",
         sizes: ["UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
     },
@@ -50,7 +50,7 @@ const products = [
         name: "Spalding NBA Official Basketball",
         category: "balls",
         price: 4999,
-        image: "images/product-ball2.jpg",
+        image: "/images/product-ball2.jpg",
         description: "Official NBA game ball with superior grip and durability.",
         sizes: ["Size 5", "Size 6", "Size 7"]
     },
@@ -59,7 +59,7 @@ const products = [
         name: "Yonex Astrox 100ZZ Badminton Racket",
         category: "rackets",
         price: 18999,
-        image: "images/product-racket2.jpg",
+        image: "/images/product-racket2.jpg",
         description: "Professional badminton racket with Rotational Generator System for powerful smashes."
     },
     {
@@ -67,7 +67,7 @@ const products = [
         name: "Nike Dri-FIT Training Gloves",
         category: "accessories",
         price: 1499,
-        image: "images/product-gloves1.jpg",
+        image: "/images/product-gloves1.jpg",
         description: "Lightweight training gloves with moisture-wicking technology for comfort during workouts."
     },
     {
@@ -75,7 +75,7 @@ const products = [
         name: "Adidas Ultraboost 22",
         category: "footwear",
         price: 14999,
-        image: "images/product-shoe3.jpg",
+        image: "/images/product-shoe3.jpg",
         description: "Premium running shoes with responsive Boost midsole for ultimate energy return."
     },
     {
@@ -83,7 +83,7 @@ const products = [
         name: "Kookaburra Cricket Ball",
         category: "balls",
         price: 1999,
-        image: "images/product-ball3.jpg",
+        image: "/images/product-ball3.jpg",
         description: "Premium quality cricket ball with hand-stitched seam for consistent performance."
     },
     {
@@ -91,7 +91,7 @@ const products = [
         name: "Head Graphene 360+ Speed Pro Tennis Racket",
         category: "rackets",
         price: 16999,
-        image: "images/product-racket3.jpg",
+        image: "/images/product-racket3.jpg",
         description: "Novak Djokovic's choice with perfect balance of power and control."
     },
     {
@@ -99,7 +99,7 @@ const products = [
         name: "Fitbit Charge 5 Fitness Tracker",
         category: "accessories",
         price: 12999,
-        image: "images/product-tracker1.jpg",
+        image: "/images/product-tracker1.jpg",
         description: "Advanced fitness tracker with built-in GPS, heart rate monitoring, and sleep tracking."
     },
     {
@@ -107,7 +107,7 @@ const products = [
         name: "Asics Gel-Kayano 28",
         category: "footwear",
         price: 11999,
-        image: "images/product-shoe4.jpg",
+        image: "/images/product-shoe4.jpg",
         description: "Stability running shoes with GEL technology for superior cushioning and support."
     },
     {
@@ -115,7 +115,7 @@ const products = [
         name: "Mikasa V200W Volleyball",
         category: "balls",
         price: 3499,
-        image: "images/product-ball4.jpg",
+        image: "/images/product-ball4.jpg",
         description: "Official FIVB game ball with aerodynamic dimple design for stable flight."
     },
     {
@@ -123,7 +123,7 @@ const products = [
         name: "Babolat Pure Drive Tennis Racket",
         category: "rackets",
         price: 13999,
-        image: "images/product-racket4.jpg",
+        image: "/images/product-racket4.jpg",
         description: "Powerful racket with enhanced feel and stability for aggressive players."
     },
     {
@@ -131,7 +131,7 @@ const products = [
         name: "Nike Pro Combat Compression Shorts",
         category: "accessories",
         price: 2499,
-        image: "images/product-shorts1.jpg",
+        image: "/images/product-shorts1.jpg",
         description: "Compression shorts with Dri-FIT technology for muscle support and moisture management."
     },
     {
@@ -139,7 +139,7 @@ const products = [
         name: "New Balance Fresh Foam 1080v11",
         category: "footwear",
         price: 13499,
-        image: "images/product-shoe5.jpg",
+        image: "/images/product-shoe5.jpg",
         description: "Premium cushioned running shoes with Fresh Foam midsole for plush comfort."
     },
     {
@@ -147,7 +147,7 @@ const products = [
         name: "Gilbert Rugby World Cup Ball",
         category: "balls",
         price: 4499,
-        image: "images/product-ball5.jpg",
+        image: "/images/product-ball5.jpg",
         description: "Official Rugby World Cup match ball with patented grip pattern for optimal handling."
     },
     {
@@ -155,7 +155,7 @@ const products = [
         name: "Li-Ning Windstorm 72 Badminton Racket",
         category: "rackets",
         price: 8999,
-        image: "images/product-racket5.jpg",
+        image: "/images/product-racket5.jpg",
         description: "Lightweight badminton racket with aerodynamic frame for faster swing speed."
     },
     {
@@ -163,7 +163,7 @@ const products = [
         name: "Garmin Forerunner 245 GPS Watch",
         category: "accessories",
         price: 24999,
-        image: "images/product-watch1.jpg",
+        image: "/images/product-watch1.jpg",
         description: "Advanced GPS running watch with performance monitoring features and long battery life."
     }
 ];

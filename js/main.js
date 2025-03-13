@@ -150,3 +150,48 @@ function showNotification(message) {
         }, 300);
     }, 3000);
 } 
+
+ // Display user email and clear cart count when coming from checkout
+ document.addEventListener('DOMContentLoaded', function() {
+	// Check if user came from newsletter subscription
+	const subscribedEmail = localStorage.getItem('subscribedEmail');
+	if (subscribedEmail) {
+			// Find the message element and update it with the user's email
+			const detailsElement = document.querySelector('.thanks-details');
+			if (detailsElement) {
+					detailsElement.innerHTML = `
+							You've been added to our mailing list with email <strong>${subscribedEmail}</strong> and will now be among the first to hear about new arrivals, exclusive offers, and upcoming events.
+					`;
+			}
+			
+			// Clear the stored email
+			localStorage.removeItem('subscribedEmail');
+	}
+	
+	// Check if user came from checkout
+	const urlParams = new URLSearchParams(window.location.search);
+	const fromCheckout = urlParams.get('checkout');
+	
+	if (fromCheckout === 'complete') {
+			// Update page title and content for order confirmation
+			document.querySelector('.thanks-hero__title').textContent = 'Thank You for Your Order!';
+			document.querySelector('.thanks-hero__subtitle').textContent = 'Your order has been successfully placed';
+			document.querySelector('.thanks-message').textContent = 'Your order has been confirmed';
+			
+			const detailsElement = document.querySelector('.thanks-details');
+			if (detailsElement) {
+					detailsElement.innerHTML = `
+							We've sent a confirmation email with your order details. Your items will be shipped soon.
+					`;
+			}
+			
+			// Clear the cart
+			localStorage.removeItem('cart');
+			
+			// Update cart count
+			const cartCount = document.querySelector('.cart-count');
+			if (cartCount) {
+					cartCount.textContent = '0';
+			}
+	}
+});
