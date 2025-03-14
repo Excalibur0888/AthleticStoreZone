@@ -246,6 +246,26 @@ document.addEventListener('DOMContentLoaded', function() {
         const recommendedProductsContainer = document.getElementById('recommendedProducts');
         if (!recommendedProductsContainer) return;
         
+        // Проверяем, есть ли уже товары в контейнере (статическая разметка)
+        if (recommendedProductsContainer.children.length > 0) {
+            // Если товары уже есть, просто добавляем обработчики событий к существующим кнопкам
+            document.querySelectorAll('.recommended-products .add-to-cart').forEach(button => {
+                button.addEventListener('click', function() {
+                    const productId = this.getAttribute('data-id');
+                    const name = this.getAttribute('data-name');
+                    const price = parseFloat(this.getAttribute('data-price'));
+                    const image = this.getAttribute('data-image');
+                    
+                    // Добавляем товар в корзину
+                    addToCart(productId, name, price, image);
+                });
+            });
+            
+            // Выходим из функции, не добавляя новые товары
+            return;
+        }
+        
+        // Если товаров нет, то добавляем их (этот код не будет выполняться, если есть статическая разметка)
         // In a real application, these would be fetched from an API based on user's browsing history
         // For now, we'll use some sample products
         const recommendedProducts = [
@@ -272,28 +292,27 @@ document.addEventListener('DOMContentLoaded', function() {
                 name: 'Spalding NBA Official Basketball',
                 price: 4999,
                 image: '/images/product-ball2.jpg'
-            },
-            {
-                id: 5,
-                name: 'TerraGrip Future Z Football Boots',
-                price: 12999,
-                image: '/images/product-shoe2.jpg'
             }
         ];
         
         // Create product cards
         recommendedProducts.forEach(product => {
             const productCard = document.createElement('div');
-            productCard.className = 'recommended-product-card';
+            productCard.className = 'product-card';
             
             productCard.innerHTML = `
-                <div class="recommended-product-card__image">
+                <div class="product-card__image">
                     <img src="${product.image}" alt="${product.name}">
                 </div>
-                <div class="recommended-product-card__content">
-                    <h3 class="recommended-product-card__title">${product.name}</h3>
-                    <div class="recommended-product-card__price">${formatPrice(product.price)}</div>
-                    <button class="recommended-product-card__button" data-product-id="${product.id}">Add to Cart</button>
+                <div class="product-card__content">
+                    <h3 class="product-card__title">${product.name}</h3>
+                    <p class="product-card__category">Category</p>
+                    <div class="product-card__price">${formatPrice(product.price)}</div>
+                    <div class="product-card__actions">
+                        <button class="add-to-cart" data-id="${product.id}" data-name="${product.name}" data-price="${product.price}" data-image="${product.image}">
+                            Add to Cart
+                        </button>
+                    </div>
                 </div>
             `;
             
@@ -301,44 +320,50 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         
         // Add event listeners to "Add to Cart" buttons
-        document.querySelectorAll('.recommended-product-card__button').forEach(button => {
+        document.querySelectorAll('.add-to-cart').forEach(button => {
             button.addEventListener('click', function() {
-                const productId = parseInt(this.getAttribute('data-product-id'));
-                const product = recommendedProducts.find(p => p.id === productId);
+                const productId = this.getAttribute('data-id');
+                const name = this.getAttribute('data-name');
+                const price = parseFloat(this.getAttribute('data-price'));
+                const image = this.getAttribute('data-image');
                 
-                if (product) {
-                    // Add product to cart
-                    let cart = JSON.parse(localStorage.getItem('cart')) || [];
-                    
-                    // Check if product already exists in cart
-                    const existingItemIndex = cart.findIndex(item => item.id === productId);
-                    
-                    if (existingItemIndex !== -1) {
-                        // Increment quantity if product already in cart
-                        cart[existingItemIndex].quantity += 1;
-                    } else {
-                        // Add new product to cart
-                        cart.push({
-                            id: product.id,
-                            name: product.name,
-                            price: product.price,
-                            image: product.image,
-                            quantity: 1
-                        });
-                    }
-                    
-                    // Save updated cart to localStorage
-                    localStorage.setItem('cart', JSON.stringify(cart));
-                    
-                    // Update UI
-                    loadCartItems();
-                    updateCartCount();
-                    
-                    // Show notification
-                    showNotification(`${product.name} added to cart!`);
-                }
+                // Добавляем товар в корзину
+                addToCart(productId, name, price, image);
             });
         });
+    }
+    
+    // Функция для добавления товара в корзину
+    function addToCart(productId, name, price, image) {
+        // Get cart from localStorage
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        
+        // Check if product already exists in cart
+        const existingItemIndex = cart.findIndex(item => item.id === productId);
+        
+        if (existingItemIndex !== -1) {
+            // Increment quantity if product already in cart
+            cart[existingItemIndex].quantity += 1;
+        } else {
+            // Add new product to cart
+            cart.push({
+                id: productId,
+                name: name,
+                price: price,
+                image: image,
+                quantity: 1
+            });
+        }
+        
+        // Save updated cart to localStorage
+        localStorage.setItem('cart', JSON.stringify(cart));
+        
+        // Update UI
+        loadCartItems();
+        updateCartCount();
+        
+        // Show notification
+        showNotification(`${name} added to cart!`);
     }
     
     // Show notification

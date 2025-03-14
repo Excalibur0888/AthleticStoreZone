@@ -91,10 +91,329 @@
                 <div class="catalog__content">
                     <div class="catalog__header">
                         <h2 class="catalog__title">All Products</h2>
-                        <div class="catalog__count"><span id="productCount">0</span> products</div>
+                        <div class="catalog__count"><span id="productCount">20</span> products</div>
                     </div>
                     <div class="products__grid" id="productsGrid">
-                        <!-- Products will be loaded dynamically via JavaScript -->
+                        <!-- Статическая разметка товаров вместо динамической загрузки -->
+                        <div class="product-card" data-category="footwear">
+                            <div class="product-card__image">
+                                <img src="/images/product-shoe1.jpg" alt="Velocite Air Glide Runner 38">
+                            </div>
+                            <div class="product-card__content">
+                                <h3 class="product-card__title">Velocite Air Glide Runner 38</h3>
+                                <p class="product-card__category">Footwear</p>
+                                <div class="product-card__price">₹8,999</div>
+                                <div class="product-card__actions">
+                                    <button class="add-to-cart" data-id="1" data-name="Velocite Air Glide Runner 38" data-price="8999" data-image="/images/product-shoe1.jpg">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="balls">
+                            <div class="product-card__image">
+                                <img src="/images/product-ball1.jpg" alt="PulsarTech Predator Edge Football">
+                            </div>
+                            <div class="product-card__content">
+                                <h3 class="product-card__title">PulsarTech Predator Edge Football</h3>
+                                <p class="product-card__category">Balls</p>
+                                <div class="product-card__price">₹2,499</div>
+                                <div class="product-card__actions">
+                                    <button class="add-to-cart" data-id="2" data-name="PulsarTech Predator Edge Football" data-price="2499" data-image="/images/product-ball1.jpg">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="rackets">
+                            <div class="product-card__image">
+                                <img src="/images/product-racket1.jpg" alt="ZenithFlex Pro Staff RF97 Tennis Racket">
+                            </div>
+                            <div class="product-card__content">
+                                <h3 class="product-card__title">ZenithFlex Pro Staff RF97 Tennis Racket</h3>
+                                <p class="product-card__category">Rackets</p>
+                                <div class="product-card__price">₹15,999</div>
+                                <div class="product-card__actions">
+                                    <button class="add-to-cart" data-id="3" data-name="ZenithFlex Pro Staff RF97 Tennis Racket" data-price="15999" data-image="/images/product-racket1.jpg">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="accessories">
+                            <div class="product-card__image">
+                                <img src="/images/product-bag1.jpg" alt="ZenithFlex Sports Bag">
+                            </div>
+                            <div class="product-card__content">
+                                <h3 class="product-card__title">ZenithFlex Sports Bag</h3>
+                                <p class="product-card__category">Accessories</p>
+                                <div class="product-card__price">₹3,499</div>
+                                <div class="product-card__actions">
+                                    <button class="add-to-cart" data-id="4" data-name="ZenithFlex Sports Bag" data-price="3499" data-image="/images/product-bag1.jpg">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="footwear">
+                            <div class="product-card__image">
+                                <img src="/images/product-shoe2.jpg" alt="TerraGrip Future Z Football Boots">
+                            </div>
+                            <div class="product-card__content">
+                                <h3 class="product-card__title">TerraGrip Future Z Football Boots</h3>
+                                <p class="product-card__category">Footwear</p>
+                                <div class="product-card__price">₹12,999</div>
+                                <div class="product-card__actions">
+                                    <button class="add-to-cart" data-id="5" data-name="TerraGrip Future Z Football Boots" data-price="12999" data-image="/images/product-shoe2.jpg">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="balls">
+                            <div class="product-card__image">
+                                <img src="/images/product-ball2.jpg" alt="TerraGrip Pro Basketball">
+                            </div>
+                            <div class="product-card__content">
+                                <h3 class="product-card__title">TerraGrip Pro Basketball</h3>
+                                <p class="product-card__category">Balls</p>
+                                <div class="product-card__price">₹4,999</div>
+                                <div class="product-card__actions">
+                                    <button class="add-to-cart" data-id="6" data-name="TerraGrip Pro Basketball" data-price="4999" data-image="/images/product-ball2.jpg">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="rackets">
+                            <div class="product-card__image">
+                                <img src="/images/product-racket2.jpg" alt="Velocite Astrox 100ZZ Badminton Racket">
+                            </div>
+                            <div class="product-card__content">
+                                <h3 class="product-card__title">Velocite Astrox 100ZZ Badminton Racket</h3>
+                                <p class="product-card__category">Rackets</p>
+                                <div class="product-card__price">₹18,999</div>
+                                <div class="product-card__actions">
+                                    <button class="add-to-cart" data-id="7" data-name="Velocite Astrox 100ZZ Badminton Racket" data-price="18999" data-image="/images/product-racket2.jpg">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="accessories">
+                            <div class="product-card__image">
+                                <img src="/images/product-gloves1.jpg" alt="Velocite Dry-Tech Training Gloves">
+                            </div>
+                            <div class="product-card__content">
+                                <h3 class="product-card__title">Velocite Dry-Tech Training Gloves</h3>
+                                <p class="product-card__category">Accessories</p>
+                                <div class="product-card__price">₹1,499</div>
+                                <div class="product-card__actions">
+                                    <button class="add-to-cart" data-id="8" data-name="Velocite Dry-Tech Training Gloves" data-price="1499" data-image="/images/product-gloves1.jpg">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="footwear">
+                            <div class="product-card__image">
+                                <img src="/images/product-shoe3.jpg" alt="PulsarTech UltraStride 22">
+                            </div>
+                            <div class="product-card__content">
+                                <h3 class="product-card__title">PulsarTech UltraStride 22</h3>
+                                <p class="product-card__category">Footwear</p>
+                                <div class="product-card__price">₹14,999</div>
+                                <div class="product-card__actions">
+                                    <button class="add-to-cart" data-id="9" data-name="PulsarTech UltraStride 22" data-price="14999" data-image="/images/product-shoe3.jpg">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="balls">
+                            <div class="product-card__image">
+                                <img src="/images/product-ball3.jpg" alt="PulsarTech Cricket Ball">
+                            </div>
+                            <div class="product-card__content">
+                                <h3 class="product-card__title">PulsarTech Cricket Ball</h3>
+                                <p class="product-card__category">Balls</p>
+                                <div class="product-card__price">₹1,999</div>
+                                <div class="product-card__actions">
+                                    <button class="add-to-cart" data-id="10" data-name="PulsarTech Cricket Ball" data-price="1999" data-image="/images/product-ball3.jpg">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="rackets">
+                            <div class="product-card__image">
+                                <img src="/images/product-racket3.jpg" alt="TerraGrip Graphene 360+ Speed Pro Tennis Racket">
+                            </div>
+                            <div class="product-card__content">
+                                <h3 class="product-card__title">TerraGrip Graphene 360+ Speed Pro Tennis Racket</h3>
+                                <p class="product-card__category">Rackets</p>
+                                <div class="product-card__price">₹16,999</div>
+                                <div class="product-card__actions">
+                                    <button class="add-to-cart" data-id="11" data-name="TerraGrip Graphene 360+ Speed Pro Tennis Racket" data-price="16999" data-image="/images/product-racket3.jpg">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="accessories">
+                            <div class="product-card__image">
+                                <img src="/images/product-tracker1.jpg" alt="ZenithFlex Pulse 5 Fitness Tracker">
+                            </div>
+                            <div class="product-card__content">
+                                <h3 class="product-card__title">ZenithFlex Pulse 5 Fitness Tracker</h3>
+                                <p class="product-card__category">Accessories</p>
+                                <div class="product-card__price">₹12,999</div>
+                                <div class="product-card__actions">
+                                    <button class="add-to-cart" data-id="12" data-name="ZenithFlex Pulse 5 Fitness Tracker" data-price="12999" data-image="/images/product-tracker1.jpg">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="footwear">
+                            <div class="product-card__image">
+                                <img src="/images/product-shoe4.jpg" alt="Velocite Gel-Kayano 28">
+                            </div>
+                            <div class="product-card__content">
+                                <h3 class="product-card__title">Velocite Gel-Kayano 28</h3>
+                                <p class="product-card__category">Footwear</p>
+                                <div class="product-card__price">₹11,999</div>
+                                <div class="product-card__actions">
+                                    <button class="add-to-cart" data-id="13" data-name="Velocite Gel-Kayano 28" data-price="11999" data-image="/images/product-shoe4.jpg">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="balls">
+                            <div class="product-card__image">
+                                <img src="/images/product-ball4.jpg" alt="PulsarTech V200W Volleyball">
+                            </div>
+                            <div class="product-card__content">
+                                <h3 class="product-card__title">PulsarTech V200W Volleyball</h3>
+                                <p class="product-card__category">Balls</p>
+                                <div class="product-card__price">₹3,499</div>
+                                <div class="product-card__actions">
+                                    <button class="add-to-cart" data-id="14" data-name="PulsarTech V200W Volleyball" data-price="3499" data-image="/images/product-ball4.jpg">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="rackets">
+                            <div class="product-card__image">
+                                <img src="/images/product-racket4.jpg" alt="TerraGrip Pure Drive Tennis Racket">
+                            </div>
+                            <div class="product-card__content">
+                                <h3 class="product-card__title">TerraGrip Pure Drive Tennis Racket</h3>
+                                <p class="product-card__category">Rackets</p>
+                                <div class="product-card__price">₹13,999</div>
+                                <div class="product-card__actions">
+                                    <button class="add-to-cart" data-id="15" data-name="TerraGrip Pure Drive Tennis Racket" data-price="13999" data-image="/images/product-racket4.jpg">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="accessories">
+                            <div class="product-card__image">
+                                <img src="/images/product-shorts1.jpg" alt="Velocite Pro Elite Compression Shorts">
+                            </div>
+                            <div class="product-card__content">
+                                <h3 class="product-card__title">Velocite Pro Elite Compression Shorts</h3>
+                                <p class="product-card__category">Accessories</p>
+                                <div class="product-card__price">₹2,499</div>
+                                <div class="product-card__actions">
+                                    <button class="add-to-cart" data-id="16" data-name="Velocite Pro Elite Compression Shorts" data-price="2499" data-image="/images/product-shorts1.jpg">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="footwear">
+                            <div class="product-card__image">
+                                <img src="/images/product-shoe5.jpg" alt="ZenithFlex Fresh Step 1080">
+                            </div>
+                            <div class="product-card__content">
+                                <h3 class="product-card__title">ZenithFlex Fresh Step 1080</h3>
+                                <p class="product-card__category">Footwear</p>
+                                <div class="product-card__price">₹13,499</div>
+                                <div class="product-card__actions">
+                                    <button class="add-to-cart" data-id="17" data-name="ZenithFlex Fresh Step 1080" data-price="13499" data-image="/images/product-shoe5.jpg">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="balls">
+                            <div class="product-card__image">
+                                <img src="/images/product-ball5.jpg" alt="ZenithFlex Rugby World Cup Ball">
+                            </div>
+                            <div class="product-card__content">
+                                <h3 class="product-card__title">ZenithFlex Rugby World Cup Ball</h3>
+                                <p class="product-card__category">Balls</p>
+                                <div class="product-card__price">₹4,499</div>
+                                <div class="product-card__actions">
+                                    <button class="add-to-cart" data-id="18" data-name="ZenithFlex Rugby World Cup Ball" data-price="4499" data-image="/images/product-ball5.jpg">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="rackets">
+                            <div class="product-card__image">
+                                <img src="/images/product-racket5.jpg" alt="Velocite Windstorm 72 Badminton Racket">
+                            </div>
+                            <div class="product-card__content">
+                                <h3 class="product-card__title">Velocite Windstorm 72 Badminton Racket</h3>
+                                <p class="product-card__category">Rackets</p>
+                                <div class="product-card__price">₹8,999</div>
+                                <div class="product-card__actions">
+                                    <button class="add-to-cart" data-id="19" data-name="Velocite Windstorm 72 Badminton Racket" data-price="8999" data-image="/images/product-racket5.jpg">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="accessories">
+                            <div class="product-card__image">
+                                <img src="/images/product-watch1.jpg" alt="PulsarTech Navigator 245 GPS Watch">
+                            </div>
+                            <div class="product-card__content">
+                                <h3 class="product-card__title">PulsarTech Navigator 245 GPS Watch</h3>
+                                <p class="product-card__category">Accessories</p>
+                                <div class="product-card__price">₹24,999</div>
+                                <div class="product-card__actions">
+                                    <button class="add-to-cart" data-id="20" data-name="PulsarTech Navigator 245 GPS Watch" data-price="24999" data-image="/images/product-watch1.jpg">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

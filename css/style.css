@@ -829,6 +829,7 @@ section {
 
 .recommended-products__grid {
     display: flex;
+		justify-content: center;
     gap: 20px;
     padding: 10px 5px;
     min-width: min-content; /* Ensure all items are visible */
@@ -849,7 +850,6 @@ section {
 }
 
 .recommended-product-card__image {
-    height: 200px;
     overflow: hidden;
 }
 

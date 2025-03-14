@@ -51,38 +51,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Newsletter form submission
-    const newsletterForm = document.getElementById('newsletterForm');
-    if (newsletterForm) {
-        newsletterForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const emailInput = this.querySelector('input[type="email"]');
-            const privacyConsent = document.getElementById('privacyConsent');
-            const newsletterMessage = document.getElementById('newsletterMessage');
-            
-            if (!emailInput.value) {
-                newsletterMessage.textContent = 'Please enter your email address.';
-                newsletterMessage.classList.add('error');
-                return;
-            }
-            
-            if (!privacyConsent.checked) {
-                newsletterMessage.textContent = 'Please agree to our Privacy Policy.';
-                newsletterMessage.classList.add('error');
-                return;
-            }
-            
-            // In a real application, you would send the data to a server here
-            // For now, we'll just redirect to the thanks page
-            
-            // Store email in localStorage for potential use on the thanks page
-            localStorage.setItem('subscribedEmail', emailInput.value);
-            
-            // Redirect to thanks page
-            window.location.href = '/thanks.html';
-        });
-    }
 });
 
 // Cart functionality
